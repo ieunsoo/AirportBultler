@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08D1AF3E2C62542B00510C05 /* KAC_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1AF3D2C62542B00510C05 /* KAC_View.swift */; };
+		5749231E2C5C6332008A675A /* AirportButlerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749231D2C5C6332008A675A /* AirportButlerApp.swift */; };
+		574923202C5C6332008A675A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749231F2C5C6332008A675A /* ContentView.swift */; };
+		574923222C5C6333008A675A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574923212C5C6333008A675A /* Assets.xcassets */; };
+		574923252C5C6333008A675A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574923242C5C6333008A675A /* Preview Assets.xcassets */; };
+		5749232F2C5C6333008A675A /* AirportButlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749232E2C5C6333008A675A /* AirportButlerTests.swift */; };
+		574923392C5C6333008A675A /* AirportButlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574923382C5C6333008A675A /* AirportButlerUITests.swift */; };
+		5749233B2C5C6333008A675A /* AirportButlerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749233A2C5C6333008A675A /* AirportButlerUITestsLaunchTests.swift */; };
+		57CC047D2C5C692700367482 /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC047C2C5C692700367482 /* MainNavigation.swift */; };
+		57CC04952C5C875700367482 /* KAC_GCD_View_old.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC04942C5C875700367482 /* KAC_GCD_View_old.swift */; };
+		E00BFD072C698A7800208FA1 /* KAC_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BFD062C698A7800208FA1 /* KAC_ViewModel.swift */; };
+		E01519152C6B0B9600C2B4D6 /* KAC_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01519142C6B0B9600C2B4D6 /* KAC_Model.swift */; };
+		E01E75622C702F620003BC0E /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01E75612C702F620003BC0E /* DateView.swift */; };
+		E01E75662C7082800003BC0E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01E75652C7082800003BC0E /* MainView.swift */; };
+		E072FB942C673C3A008AA7B8 /* notice.txt in Resources */ = {isa = PBXBuildFile; fileRef = E072FB932C673C3A008AA7B8 /* notice.txt */; };
+		E072FB982C67500F008AA7B8 /* loadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E072FB972C67500F008AA7B8 /* loadingView.swift */; };
+		E08FD9272C6B8A2200FD1C8C /* IIAC_DailyPassenger_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08FD9262C6B8A2200FD1C8C /* IIAC_DailyPassenger_View.swift */; };
+		E08FD9292C6B8A6800FD1C8C /* IIAC_DailyPassenger_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08FD9282C6B8A6800FD1C8C /* IIAC_DailyPassenger_ViewModel.swift */; };
+		E08FD92B2C6B8A9700FD1C8C /* IIAC_DailyPassenger_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08FD92A2C6B8A9600FD1C8C /* IIAC_DailyPassenger_Model.swift */; };
+		E08FD9352C6B8AF800FD1C8C /* IIAC_DailyPassenger_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08FD92C2C6B8AF800FD1C8C /* IIAC_DailyPassenger_1.swift */; };
+		E08FD9362C6B8AF800FD1C8C /* IIAC_DailyPassenger_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08FD92D2C6B8AF800FD1C8C /* IIAC_DailyPassenger_2.swift */; };
+		E08FD9372C6B8AF800FD1C8C /* IIAC_DailyPassenger_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08FD92E2C6B8AF800FD1C8C /* IIAC_DailyPassenger_3.swift */; };
+		E08FD9382C6B8AF800FD1C8C /* IIAC_DailyPassenger_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08FD92F2C6B8AF800FD1C8C /* IIAC_DailyPassenger_4.swift */; };
+		E08FD9392C6B8AF800FD1C8C /* IIAC_DailyPassenger_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08FD9302C6B8AF800FD1C8C /* IIAC_DailyPassenger_5.swift */; };
+		E08FD93A2C6B8AF800FD1C8C /* IIAC_DailyPassenger_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08FD9312C6B8AF800FD1C8C /* IIAC_DailyPassenger_6.swift */; };
+		E08FD93B2C6B8AF800FD1C8C /* IIAC_DailyPassenger_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08FD9322C6B8AF800FD1C8C /* IIAC_DailyPassenger_7.swift */; };
+		E08FD93C2C6B8AF800FD1C8C /* IIAC_DailyPassenger_8.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08FD9332C6B8AF800FD1C8C /* IIAC_DailyPassenger_8.swift */; };
+		E091BC612C6351F8001DECEC /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091BC602C6351F8001DECEC /* Parking.swift */; };
+		E0A9CF3E2C5F3E2200EFB5D7 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9CF3D2C5F3E2200EFB5D7 /* TestView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5749232B2C5C6333008A675A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 574923122C5C6332008A675A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 574923192C5C6332008A675A;
+			remoteInfo = AirportButler;
+		};
+		574923352C5C6333008A675A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 574923122C5C6332008A675A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 574923192C5C6332008A675A;
+			remoteInfo = AirportButler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08D1AF3D2C62542B00510C05 /* KAC_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAC_View.swift; sourceTree = "<group>"; };
+		5749231A2C5C6332008A675A /* AirportButler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirportButler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5749231D2C5C6332008A675A /* AirportButlerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportButlerApp.swift; sourceTree = "<group>"; };
+		5749231F2C5C6332008A675A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		574923212C5C6333008A675A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		574923242C5C6333008A675A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5749232A2C5C6333008A675A /* AirportButlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirportButlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5749232E2C5C6333008A675A /* AirportButlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportButlerTests.swift; sourceTree = "<group>"; };
+		574923342C5C6333008A675A /* AirportButlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirportButlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		574923382C5C6333008A675A /* AirportButlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportButlerUITests.swift; sourceTree = "<group>"; };
+		5749233A2C5C6333008A675A /* AirportButlerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportButlerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		57CC047C2C5C692700367482 /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
+		57CC04942C5C875700367482 /* KAC_GCD_View_old.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAC_GCD_View_old.swift; sourceTree = "<group>"; };
+		57CC04982C5C897000367482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E00BFD062C698A7800208FA1 /* KAC_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAC_ViewModel.swift; sourceTree = "<group>"; };
+		E01519142C6B0B9600C2B4D6 /* KAC_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAC_Model.swift; sourceTree = "<group>"; };
+		E01E75612C702F620003BC0E /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+		E01E75652C7082800003BC0E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E072FB932C673C3A008AA7B8 /* notice.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = notice.txt; sourceTree = "<group>"; };
+		E072FB972C67500F008AA7B8 /* loadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingView.swift; sourceTree = "<group>"; };
+		E08FD9262C6B8A2200FD1C8C /* IIAC_DailyPassenger_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIAC_DailyPassenger_View.swift; sourceTree = "<group>"; };
+		E08FD9282C6B8A6800FD1C8C /* IIAC_DailyPassenger_ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIAC_DailyPassenger_ViewModel.swift; sourceTree = "<group>"; };
+		E08FD92A2C6B8A9600FD1C8C /* IIAC_DailyPassenger_Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIAC_DailyPassenger_Model.swift; sourceTree = "<group>"; };
+		E08FD92C2C6B8AF800FD1C8C /* IIAC_DailyPassenger_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIAC_DailyPassenger_1.swift; sourceTree = "<group>"; };
+		E08FD92D2C6B8AF800FD1C8C /* IIAC_DailyPassenger_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIAC_DailyPassenger_2.swift; sourceTree = "<group>"; };
+		E08FD92E2C6B8AF800FD1C8C /* IIAC_DailyPassenger_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIAC_DailyPassenger_3.swift; sourceTree = "<group>"; };
+		E08FD92F2C6B8AF800FD1C8C /* IIAC_DailyPassenger_4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIAC_DailyPassenger_4.swift; sourceTree = "<group>"; };
+		E08FD9302C6B8AF800FD1C8C /* IIAC_DailyPassenger_5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIAC_DailyPassenger_5.swift; sourceTree = "<group>"; };
+		E08FD9312C6B8AF800FD1C8C /* IIAC_DailyPassenger_6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIAC_DailyPassenger_6.swift; sourceTree = "<group>"; };
+		E08FD9322C6B8AF800FD1C8C /* IIAC_DailyPassenger_7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIAC_DailyPassenger_7.swift; sourceTree = "<group>"; };
+		E08FD9332C6B8AF800FD1C8C /* IIAC_DailyPassenger_8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIAC_DailyPassenger_8.swift; sourceTree = "<group>"; };
+		E091BC602C6351F8001DECEC /* Parking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
+		E0A9CF3D2C5F3E2200EFB5D7 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		574923172C5C6332008A675A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574923272C5C6333008A675A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574923312C5C6333008A675A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		574923112C5C6332008A675A = {
+			isa = PBXGroup;
+			children = (
+				E072FB932C673C3A008AA7B8 /* notice.txt */,
+				5749231C2C5C6332008A675A /* AirportButler */,
+				5749232D2C5C6333008A675A /* AirportButlerTests */,
+				574923372C5C6333008A675A /* AirportButlerUITests */,
+				5749231B2C5C6332008A675A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5749231B2C5C6332008A675A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5749231A2C5C6332008A675A /* AirportButler.app */,
+				5749232A2C5C6333008A675A /* AirportButlerTests.xctest */,
+				574923342C5C6333008A675A /* AirportButlerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5749231C2C5C6332008A675A /* AirportButler */ = {
+			isa = PBXGroup;
+			children = (
+				574923212C5C6333008A675A /* Assets.xcassets */,
+				5749231D2C5C6332008A675A /* AirportButlerApp.swift */,
+				5749231F2C5C6332008A675A /* ContentView.swift */,
+				57CC04982C5C897000367482 /* Info.plist */,
+				57CC047E2C5C76FF00367482 /* Model */,
+				E072FB552C660427008AA7B8 /* ViewModel */,
+				57CC047B2C5C651F00367482 /* View */,
+				E0FD5E622C64745000940ED1 /* forTest */,
+				574923232C5C6333008A675A /* Preview Content */,
+			);
+			path = AirportButler;
+			sourceTree = "<group>";
+		};
+		574923232C5C6333008A675A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				574923242C5C6333008A675A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5749232D2C5C6333008A675A /* AirportButlerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5749232E2C5C6333008A675A /* AirportButlerTests.swift */,
+			);
+			path = AirportButlerTests;
+			sourceTree = "<group>";
+		};
+		574923372C5C6333008A675A /* AirportButlerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				574923382C5C6333008A675A /* AirportButlerUITests.swift */,
+				5749233A2C5C6333008A675A /* AirportButlerUITestsLaunchTests.swift */,
+			);
+			path = AirportButlerUITests;
+			sourceTree = "<group>";
+		};
+		57CC047B2C5C651F00367482 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E08FD9342C6B8AF800FD1C8C /* cutomView */,
+				E08FD9262C6B8A2200FD1C8C /* IIAC_DailyPassenger_View.swift */,
+				08D1AF3D2C62542B00510C05 /* KAC_View.swift */,
+				57CC047C2C5C692700367482 /* MainNavigation.swift */,
+				E091BC602C6351F8001DECEC /* Parking.swift */,
+				E01E75652C7082800003BC0E /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57CC047E2C5C76FF00367482 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E08FD92A2C6B8A9600FD1C8C /* IIAC_DailyPassenger_Model.swift */,
+				E01519142C6B0B9600C2B4D6 /* KAC_Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E00BFD082C698AB000208FA1 /* OldFile */ = {
+			isa = PBXGroup;
+			children = (
+				E0A9CF3D2C5F3E2200EFB5D7 /* TestView.swift */,
+				57CC04942C5C875700367482 /* KAC_GCD_View_old.swift */,
+			);
+			path = OldFile;
+			sourceTree = "<group>";
+		};
+		E072FB552C660427008AA7B8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E08FD9282C6B8A6800FD1C8C /* IIAC_DailyPassenger_ViewModel.swift */,
+				E00BFD062C698A7800208FA1 /* KAC_ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E08FD9342C6B8AF800FD1C8C /* cutomView */ = {
+			isa = PBXGroup;
+			children = (
+				E08FD92C2C6B8AF800FD1C8C /* IIAC_DailyPassenger_1.swift */,
+				E08FD92D2C6B8AF800FD1C8C /* IIAC_DailyPassenger_2.swift */,
+				E08FD92E2C6B8AF800FD1C8C /* IIAC_DailyPassenger_3.swift */,
+				E08FD92F2C6B8AF800FD1C8C /* IIAC_DailyPassenger_4.swift */,
+				E08FD9302C6B8AF800FD1C8C /* IIAC_DailyPassenger_5.swift */,
+				E08FD9312C6B8AF800FD1C8C /* IIAC_DailyPassenger_6.swift */,
+				E08FD9322C6B8AF800FD1C8C /* IIAC_DailyPassenger_7.swift */,
+				E08FD9332C6B8AF800FD1C8C /* IIAC_DailyPassenger_8.swift */,
+			);
+			path = cutomView;
+			sourceTree = "<group>";
+		};
+		E0FD5E622C64745000940ED1 /* forTest */ = {
+			isa = PBXGroup;
+			children = (
+				E00BFD082C698AB000208FA1 /* OldFile */,
+				E072FB972C67500F008AA7B8 /* loadingView.swift */,
+				E01E75612C702F620003BC0E /* DateView.swift */,
+			);
+			path = forTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		574923192C5C6332008A675A /* AirportButler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5749233E2C5C6333008A675A /* Build configuration list for PBXNativeTarget "AirportButler" */;
+			buildPhases = (
+				574923162C5C6332008A675A /* Sources */,
+				574923172C5C6332008A675A /* Frameworks */,
+				574923182C5C6332008A675A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirportButler;
+			productName = AirportButler;
+			productReference = 5749231A2C5C6332008A675A /* AirportButler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		574923292C5C6333008A675A /* AirportButlerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 574923412C5C6333008A675A /* Build configuration list for PBXNativeTarget "AirportButlerTests" */;
+			buildPhases = (
+				574923262C5C6333008A675A /* Sources */,
+				574923272C5C6333008A675A /* Frameworks */,
+				574923282C5C6333008A675A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5749232C2C5C6333008A675A /* PBXTargetDependency */,
+			);
+			name = AirportButlerTests;
+			productName = AirportButlerTests;
+			productReference = 5749232A2C5C6333008A675A /* AirportButlerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		574923332C5C6333008A675A /* AirportButlerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 574923442C5C6333008A675A /* Build configuration list for PBXNativeTarget "AirportButlerUITests" */;
+			buildPhases = (
+				574923302C5C6333008A675A /* Sources */,
+				574923312C5C6333008A675A /* Frameworks */,
+				574923322C5C6333008A675A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				574923362C5C6333008A675A /* PBXTargetDependency */,
+			);
+			name = AirportButlerUITests;
+			productName = AirportButlerUITests;
+			productReference = 574923342C5C6333008A675A /* AirportButlerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		574923122C5C6332008A675A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					574923192C5C6332008A675A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					574923292C5C6333008A675A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 574923192C5C6332008A675A;
+					};
+					574923332C5C6333008A675A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 574923192C5C6332008A675A;
+					};
+				};
+			};
+			buildConfigurationList = 574923152C5C6332008A675A /* Build configuration list for PBXProject "AirportButler" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 574923112C5C6332008A675A;
+			productRefGroup = 5749231B2C5C6332008A675A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				574923192C5C6332008A675A /* AirportButler */,
+				574923292C5C6333008A675A /* AirportButlerTests */,
+				574923332C5C6333008A675A /* AirportButlerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		574923182C5C6332008A675A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574923252C5C6333008A675A /* Preview Assets.xcassets in Resources */,
+				E072FB942C673C3A008AA7B8 /* notice.txt in Resources */,
+				574923222C5C6333008A675A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574923282C5C6333008A675A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574923322C5C6333008A675A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		574923162C5C6332008A675A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E08FD9392C6B8AF800FD1C8C /* IIAC_DailyPassenger_5.swift in Sources */,
+				E08FD9292C6B8A6800FD1C8C /* IIAC_DailyPassenger_ViewModel.swift in Sources */,
+				E08FD93B2C6B8AF800FD1C8C /* IIAC_DailyPassenger_7.swift in Sources */,
+				57CC047D2C5C692700367482 /* MainNavigation.swift in Sources */,
+				574923202C5C6332008A675A /* ContentView.swift in Sources */,
+				57CC04952C5C875700367482 /* KAC_GCD_View_old.swift in Sources */,
+				E08FD9272C6B8A2200FD1C8C /* IIAC_DailyPassenger_View.swift in Sources */,
+				E08FD93C2C6B8AF800FD1C8C /* IIAC_DailyPassenger_8.swift in Sources */,
+				E08FD9372C6B8AF800FD1C8C /* IIAC_DailyPassenger_3.swift in Sources */,
+				E091BC612C6351F8001DECEC /* Parking.swift in Sources */,
+				5749231E2C5C6332008A675A /* AirportButlerApp.swift in Sources */,
+				E00BFD072C698A7800208FA1 /* KAC_ViewModel.swift in Sources */,
+				E08FD9352C6B8AF800FD1C8C /* IIAC_DailyPassenger_1.swift in Sources */,
+				E072FB982C67500F008AA7B8 /* loadingView.swift in Sources */,
+				E01E75622C702F620003BC0E /* DateView.swift in Sources */,
+				E08FD9362C6B8AF800FD1C8C /* IIAC_DailyPassenger_2.swift in Sources */,
+				E08FD92B2C6B8A9700FD1C8C /* IIAC_DailyPassenger_Model.swift in Sources */,
+				E08FD9382C6B8AF800FD1C8C /* IIAC_DailyPassenger_4.swift in Sources */,
+				E0A9CF3E2C5F3E2200EFB5D7 /* TestView.swift in Sources */,
+				E01E75662C7082800003BC0E /* MainView.swift in Sources */,
+				E01519152C6B0B9600C2B4D6 /* KAC_Model.swift in Sources */,
+				08D1AF3E2C62542B00510C05 /* KAC_View.swift in Sources */,
+				E08FD93A2C6B8AF800FD1C8C /* IIAC_DailyPassenger_6.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574923262C5C6333008A675A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5749232F2C5C6333008A675A /* AirportButlerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574923302C5C6333008A675A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5749233B2C5C6333008A675A /* AirportButlerUITestsLaunchTests.swift in Sources */,
+				574923392C5C6333008A675A /* AirportButlerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5749232C2C5C6333008A675A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 574923192C5C6332008A675A /* AirportButler */;
+			targetProxy = 5749232B2C5C6333008A675A /* PBXContainerItemProxy */;
+		};
+		574923362C5C6333008A675A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 574923192C5C6332008A675A /* AirportButler */;
+			targetProxy = 574923352C5C6333008A675A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5749233C2C5C6333008A675A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5749233D2C5C6333008A675A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5749233F2C5C6333008A675A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AirportButler/Preview Content\"";
+				DEVELOPMENT_TEAM = JKP8H87ADM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirportButler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eunsoo.AirportButler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		574923402C5C6333008A675A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AirportButler/Preview Content\"";
+				DEVELOPMENT_TEAM = JKP8H87ADM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirportButler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eunsoo.AirportButler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		574923422C5C6333008A675A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JKP8H87ADM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eunsoo.AirportButlerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirportButler.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AirportButler";
+			};
+			name = Debug;
+		};
+		574923432C5C6333008A675A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JKP8H87ADM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eunsoo.AirportButlerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirportButler.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AirportButler";
+			};
+			name = Release;
+		};
+		574923452C5C6333008A675A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JKP8H87ADM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eunsoo.AirportButlerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AirportButler;
+			};
+			name = Debug;
+		};
+		574923462C5C6333008A675A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JKP8H87ADM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eunsoo.AirportButlerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AirportButler;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		574923152C5C6332008A675A /* Build configuration list for PBXProject "AirportButler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5749233C2C5C6333008A675A /* Debug */,
+				5749233D2C5C6333008A675A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5749233E2C5C6333008A675A /* Build configuration list for PBXNativeTarget "AirportButler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5749233F2C5C6333008A675A /* Debug */,
+				574923402C5C6333008A675A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		574923412C5C6333008A675A /* Build configuration list for PBXNativeTarget "AirportButlerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574923422C5C6333008A675A /* Debug */,
+				574923432C5C6333008A675A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		574923442C5C6333008A675A /* Build configuration list for PBXNativeTarget "AirportButlerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574923452C5C6333008A675A /* Debug */,
+				574923462C5C6333008A675A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 574923122C5C6332008A675A /* Project object */;
+}

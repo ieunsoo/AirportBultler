@@ -1,0 +1,32 @@
+
+    1.    KAC 구간별 소요시간 정보 김포, 제주:        KAC_GJ_Time
+    2.    KAC 구간별 소요시간 정보 김해, 청주, 대구:   KAC_GCD_Time
+    3.    KAC 구간별 혼잡도 정보 김포, 제주:         KAC_GJ_Level
+    4.    KAC 구간별 혼잡도 정보 김해, 청주, 대구:    KAC_GCD_Level
+    5.    KAC 일별 시간당 예상 이용객 정보:          KAC_DailyPassenger
+    6.    IIAC 출입국장 이용승객 예상 정보:          IIAC_DailyPassenger
+    7.    IIAC 입국장 이용현황 정보:               IIAC_ArrivalStatus
+    
+    사용하는 api에 대한 이름을 이렇게 통일할게요!
+
+<이름 변경>
+
+- 김포제주, 김해청주대구이 두개 api가 별개로 발급받아서 별개의 api인줄 알았는데 공항코드만 넣으면 다 작동하네요
+- 레벨데이터 모델 1개 시간 데이터 모델 1개, 뷰모델 1개로 변경합니다.
+
+- View또한 하나를 여러번 사용하도록 KAC_View하나만 나두겠습니다
+
+-> 이전의 코드파일들은 forTest폴더에 넣어두겠습니다.
+
+<기존의 파일들>
+
+    KAC_GJ_Time_Model, KAC_GJ_Time_ViewModel
+    KAC_GCD_Time_Model, KAC_GCD_Time_ViewModel
+    KAC_GJ_Level_Model, KAC_GJ_Level_ViewModel
+    KAC_GCD_Level_Model, KAC_GCD_ViewModel
+
+<변경된 파일들>
+
+-> KAC_Time_Model, KAC_Level_Model, KAC_ViewModel
+
+
