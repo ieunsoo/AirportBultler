@@ -27,7 +27,7 @@ struct IIAC_DailyPassenger_4: View {
                                             Text("1, 2")
                                                 .fontWeight(.bold)
                                             Spacer()
-                                            Text("\(convertToTime(item.t1sum5))")
+                                            Text("\(convertToInt(item.t1sum5))")
                                                 .fontWeight(.bold)
                                             + Text("명")
                                         }
@@ -36,7 +36,7 @@ struct IIAC_DailyPassenger_4: View {
                                             Text("3")
                                                 .fontWeight(.bold)
                                             Spacer()
-                                            Text("\(convertToTime(item.t1sum6))")
+                                            Text("\(convertToInt(item.t1sum6))")
                                                 .fontWeight(.bold)
                                             + Text("명")
                                         }
@@ -45,7 +45,7 @@ struct IIAC_DailyPassenger_4: View {
                                             Text("4")
                                                 .fontWeight(.bold)
                                             Spacer()
-                                            Text("\(convertToTime(item.t1sum7))")
+                                            Text("\(convertToInt(item.t1sum7))")
                                                 .fontWeight(.bold)
                                             + Text("명")
                                         }
@@ -54,7 +54,7 @@ struct IIAC_DailyPassenger_4: View {
                                             Text("5, 6")
                                                 .fontWeight(.bold)
                                             Spacer()
-                                            Text("\(convertToTime(item.t1sum8))")
+                                            Text("\(convertToInt(item.t1sum8))")
                                                 .fontWeight(.bold)
                                             + Text("명")
                                         }
@@ -63,7 +63,7 @@ struct IIAC_DailyPassenger_4: View {
                                         HStack {
                                             Text("합계")
                                             Spacer()
-                                            Text("\(convertToTime(item.t1sumset2))")
+                                            Text("\(convertToInt(item.t1sumset2))")
                                                 .fontWeight(.bold)
                                             + Text("명")
                                         }
@@ -100,7 +100,7 @@ struct IIAC_DailyPassenger_4: View {
         return "\(hour):00"
     }
     
-    func converToInt(_ value: String) -> String {
+    func convertToInt(_ value: String) -> String {
         if let doubleValue = Double(value) {
             return String(Int(doubleValue))
         } else {

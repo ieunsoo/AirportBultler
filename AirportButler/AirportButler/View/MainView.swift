@@ -8,12 +8,23 @@
 import SwiftUI
 
 let airports: [String] = [ "인천공항", "김포공항", "김해공항", "제주공항" ]
+enum airportNames: String, CaseIterable, Identifiable {
+    case 인천공항 = "인천공항"
+    case 김포공항
+    case 김해공항
+    case 제주공항
+    case 청주공항
+    case 대구공항
+    
+    var id: Self{self}
+    
+}
 
 struct MainView: View {
     @State var name:String
     
     var body: some View {
-        VStack{
+        HStack{
             HStack{
                 Text(name)
                     .font(.title)
@@ -22,23 +33,23 @@ struct MainView: View {
                 Spacer()
             }
             .padding(.top, 10)
+            
             HStack{
                 Spacer()
-                Picker("Select a color", selection: $name) {
-                    ForEach(airports, id: \.self) {
-                        Text($0)
+                Picker("change airport", selection: $name) {
+                    ForEach(airportNames.allCases) { aname in
+                        Text(aname.rawValue.capitalized)
                     }
-                } // 스타일 변경 가능
+                }.foregroundStyle(Color.black) // 스타일 변경 가능
             }
+            
         }
-        .frame(maxWidth: .infinity)
-        .background(Color.gray)
+        .padding(.bottom, 10)
         
-        TabView{
+        
+        NavigationStack{
             
             ScrollView{
-                
-                
                 
                 HStack{
                     Spacer()
@@ -46,11 +57,10 @@ struct MainView: View {
                     Spacer()
                 }
                 .frame(height: 130)
-                .background(Color.red)
+                .background(Color.green)
                 .cornerRadius(10.0)
                 .padding(.horizontal)
                 .padding(.bottom, 5)
-                
                 
                 HStack{
                     Spacer()
@@ -59,7 +69,7 @@ struct MainView: View {
                     
                 }
                 .frame(height: 130)
-                .background(Color.green)
+                .background(Color.gray)
                 .cornerRadius(10.0)
                 .padding(.horizontal)
                 .padding(.bottom, 5)
@@ -72,7 +82,7 @@ struct MainView: View {
                     
                 }
                 .frame(height: 300)
-                .background(Color.blue)
+                .background(Color.gray)
                 .cornerRadius(10.0)
                 .padding(.horizontal)
                 .padding(.bottom, 5)
@@ -84,30 +94,19 @@ struct MainView: View {
                     
                 }
                 .frame(height: 130)
-                .background(Color.orange)
+                .background(Color.gray)
                 .cornerRadius(10.0)
                 .padding(.horizontal)
                 .padding(.bottom, 5)
             }
-            .tabItem { Text("홈화면") }
-            
-            Text("hello world")
-                .tabItem {
-                    
-                    Text("공항 전광판")
-                }
-            
-            Text("hello world")
-                .tabItem { Text("즐겨찾기") }
-            
-            Text("hello world")
-                .tabItem { Text("전체") }
-            
             
         }
+        
+        
     }
+    
 }
 
 #Preview {
-    MainView(name: "즐겨찾기 공항")
+    MainView(name: "인천국제공항")
 }

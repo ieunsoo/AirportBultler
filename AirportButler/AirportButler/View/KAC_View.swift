@@ -34,6 +34,7 @@ struct KAC_View: View {
         default:
             self.sendCode = "PUS"
         }
+        
         self.airportName = airportName
         _times = StateObject(wrappedValue: KAC_Time_ViewModel(sendCode))
     }
@@ -91,7 +92,7 @@ struct KAC_View: View {
                                      times.fetchWaitTimes()
                                  }) {
                                      Image(systemName: "arrow.clockwise.circle.fill").foregroundStyle(Color.gray)
-                                 }.padding(.horizontal, 20)
+                                 }.padding(.horizontal, 25)
                              }
                              
                              Spacer()
@@ -111,6 +112,7 @@ struct KAC_View: View {
                              }
                              
                              HStack {
+                                 
                                  
                                  HStack(spacing: 1) {
                                      
@@ -161,16 +163,16 @@ struct KAC_View: View {
                                  }
                                  
                                  
-                             }.frame(width: 245, height: 44)
-                                 .font(.system(size: 13))
-                                 .frame(width: 245, height: 44)
+                             }
+                             .frame(width: 245, height: 44)
+                             .font(.system(size: 13))
                              
+
                              
-                             
-                             Spacer()
-                             
-                         }.frame(width: 370, height: 144) //MARK: 총 소요시간
-                             .background(Color.white)
+                         }
+                         .frame(width: 370, height: 144) //MARK: 총 소요시간
+                         .background(Color.white)
+                         .cornerRadius(15)
                         
                          
                          VStack {

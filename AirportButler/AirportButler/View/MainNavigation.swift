@@ -30,14 +30,16 @@ struct MainNavigation: View {
             VStack {
                 ZStack{
                     HStack{
-                        Text("✈️ 공항 선택")
-                            .font(.system(size: 35))
+                        Image("butler_emoji")
+                            .resizable()
+                            .frame(width: 45, height: 45)
+                        Text("공항 선택")
+                            .font(.system(size: 33))
                             .fontWeight(.bold)
-                            .padding(.horizontal, 20)
                             .padding(.vertical, 10)
                             .foregroundStyle(Color.black)
                         Spacer()
-                    }
+                    }.padding(.horizontal)
                 }
                 
                 ScrollView{
@@ -88,12 +90,14 @@ struct AirportRow: View {
             
             Image(airport.imageName)
                 .resizable()
-                .frame(width: 100, height: 100)
-                .padding(10)
+                .frame(width: 90, height: 90)
+                .cornerRadius(10)
+                .padding(13)
+            
         }
         .background(Color.white)
         .cornerRadius(10.0)
-        .padding(.horizontal)
+        .padding(.horizontal, 20)
         .padding(.bottom, 5)
     }
 }

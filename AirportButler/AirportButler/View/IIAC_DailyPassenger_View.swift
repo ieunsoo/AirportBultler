@@ -10,15 +10,30 @@ extension Color {
     }
 }
 
+
+//TODO: 내일 예상치도 보여주기
 struct IIAC_DailyPassenger_View: View {
     @StateObject private var viewModel = ApiViewModel2()
     @State private var selectedTerminalButton: Int? = 1
     @State private var selectedTimeButton: Int? = 1
+
+    enum selectedTerminal: Int{
+        case one
+        case two
+    }
+    enum selectedTime: Int{
+        case Q1 = 1
+        case Q2 = 2
+        case Q3 = 3
+        case Q4 = 4
+    }
+    
     
     var body: some View {
         NavigationView {
             ZStack {
                 Color(Color.bgGray).ignoresSafeArea()
+                
                 VStack {
                     HStack(spacing: 20) {
                         T1Button
