@@ -36,6 +36,10 @@
 		E08FD93C2C6B8AF800FD1C8C /* IIAC_DailyPassenger_8.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08FD9332C6B8AF800FD1C8C /* IIAC_DailyPassenger_8.swift */; };
 		E091BC612C6351F8001DECEC /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091BC602C6351F8001DECEC /* Parking.swift */; };
 		E0A9CF3E2C5F3E2200EFB5D7 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9CF3D2C5F3E2200EFB5D7 /* TestView.swift */; };
+		E0F21E132C884146002C44B3 /* IIAC_Parking_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F21E122C884146002C44B3 /* IIAC_Parking_View.swift */; };
+		E0F524D12C883A3E00B8C6A2 /* KAC_Parking_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F524D02C883A3E00B8C6A2 /* KAC_Parking_Model.swift */; };
+		E0F524D32C883AAF00B8C6A2 /* KAC_Parking_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F524D22C883AAF00B8C6A2 /* KAC_Parking_ViewModel.swift */; };
+		E0F524D52C883B2A00B8C6A2 /* KAC_Parking_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F524D42C883B2A00B8C6A2 /* KAC_Parking_View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,10 @@
 		E08FD9332C6B8AF800FD1C8C /* IIAC_DailyPassenger_8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IIAC_DailyPassenger_8.swift; sourceTree = "<group>"; };
 		E091BC602C6351F8001DECEC /* Parking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
 		E0A9CF3D2C5F3E2200EFB5D7 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		E0F21E122C884146002C44B3 /* IIAC_Parking_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IIAC_Parking_View.swift; sourceTree = "<group>"; };
+		E0F524D02C883A3E00B8C6A2 /* KAC_Parking_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAC_Parking_Model.swift; sourceTree = "<group>"; };
+		E0F524D22C883AAF00B8C6A2 /* KAC_Parking_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAC_Parking_ViewModel.swift; sourceTree = "<group>"; };
+		E0F524D42C883B2A00B8C6A2 /* KAC_Parking_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAC_Parking_View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,9 +191,11 @@
 			children = (
 				E08FD9342C6B8AF800FD1C8C /* cutomView */,
 				E08FD9262C6B8A2200FD1C8C /* IIAC_DailyPassenger_View.swift */,
+				E0F21E122C884146002C44B3 /* IIAC_Parking_View.swift */,
 				08D1AF3D2C62542B00510C05 /* KAC_View.swift */,
-				57CC047C2C5C692700367482 /* MainNavigation.swift */,
+				E0F524D42C883B2A00B8C6A2 /* KAC_Parking_View.swift */,
 				E091BC602C6351F8001DECEC /* Parking.swift */,
+				57CC047C2C5C692700367482 /* MainNavigation.swift */,
 				E01E75652C7082800003BC0E /* MainView.swift */,
 			);
 			path = View;
@@ -196,6 +206,7 @@
 			children = (
 				E08FD92A2C6B8A9600FD1C8C /* IIAC_DailyPassenger_Model.swift */,
 				E01519142C6B0B9600C2B4D6 /* KAC_Model.swift */,
+				E0F524D02C883A3E00B8C6A2 /* KAC_Parking_Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,6 +225,7 @@
 			children = (
 				E08FD9282C6B8A6800FD1C8C /* IIAC_DailyPassenger_ViewModel.swift */,
 				E00BFD062C698A7800208FA1 /* KAC_ViewModel.swift */,
+				E0F524D22C883AAF00B8C6A2 /* KAC_Parking_ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -386,8 +398,12 @@
 				E091BC612C6351F8001DECEC /* Parking.swift in Sources */,
 				5749231E2C5C6332008A675A /* AirportButlerApp.swift in Sources */,
 				E00BFD072C698A7800208FA1 /* KAC_ViewModel.swift in Sources */,
+				E0F524D12C883A3E00B8C6A2 /* KAC_Parking_Model.swift in Sources */,
+				E0F524D52C883B2A00B8C6A2 /* KAC_Parking_View.swift in Sources */,
+				E0F21E132C884146002C44B3 /* IIAC_Parking_View.swift in Sources */,
 				E08FD9352C6B8AF800FD1C8C /* IIAC_DailyPassenger_1.swift in Sources */,
 				E072FB982C67500F008AA7B8 /* loadingView.swift in Sources */,
+				E0F524D32C883AAF00B8C6A2 /* KAC_Parking_ViewModel.swift in Sources */,
 				E01E75622C702F620003BC0E /* DateView.swift in Sources */,
 				E08FD9362C6B8AF800FD1C8C /* IIAC_DailyPassenger_2.swift in Sources */,
 				E08FD92B2C6B8A9700FD1C8C /* IIAC_DailyPassenger_Model.swift in Sources */,

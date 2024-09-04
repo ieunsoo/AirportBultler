@@ -471,5 +471,5 @@ struct KAC_View: View {
 }
 
 #Preview {
-    KAC_View(sendCode: "GMP", airportName: "김포공항")
+    KAC_View(sendCode: "PUS", airportName: "김해공항")
 }

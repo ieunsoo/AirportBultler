@@ -71,32 +71,32 @@ struct IIAC_DailyPassenger_View: View {
                         
                         if selectedTimeButton == 1 {
                             IIAC_DailyPassenger_1()
-                                .padding(.horizontal, 30)
+                                .padding(.horizontal, 20)
                         } else if selectedTimeButton == 2 {
                             IIAC_DailyPassenger_2()
-                                .padding(.horizontal, 30)
+                                .padding(.horizontal, 20)
                         } else if selectedTimeButton == 3 {
                             IIAC_DailyPassenger_3()
-                                .padding(.horizontal, 30)
+                                .padding(.horizontal, 20)
                         } else if selectedTimeButton == 4 {
                             IIAC_DailyPassenger_4()
-                                .padding(.horizontal, 30)
+                                .padding(.horizontal, 20)
                         }
                         
                     } else if selectedTerminalButton == 2 {
                         
                         if selectedTimeButton == 1 {
                             IIAC_DailyPassenger_5()
-                                .padding(.horizontal, 30)
+                                .padding(.horizontal, 20)
                         } else if selectedTimeButton == 2 {
                             IIAC_DailyPassenger_6()
-                                .padding(.horizontal, 30)
+                                .padding(.horizontal, 20)
                         } else if selectedTimeButton == 3 {
                             IIAC_DailyPassenger_7()
-                                .padding(.horizontal, 30)
+                                .padding(.horizontal, 20)
                         } else if selectedTimeButton == 4 {
                             IIAC_DailyPassenger_8()
-                                .padding(.horizontal, 30)
+                                .padding(.horizontal, 20)
                         }
                     }
                 }
@@ -109,6 +109,7 @@ struct IIAC_DailyPassenger_View: View {
 //                }
 //            }
         }
+        .navigationTitle("인천공항")
         .onAppear {
             viewModel.fetchItems()
         }
