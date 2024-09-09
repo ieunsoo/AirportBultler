@@ -157,5 +157,5 @@ struct MainView: View {
 }
 
 #Preview {
-    MainView(name: "인천공항")
+    MainView(name: "김해공항")
 }
